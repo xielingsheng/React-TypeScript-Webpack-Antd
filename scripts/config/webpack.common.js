@@ -81,18 +81,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.scss$/,
-        use: [
-          ...getCssLoaders(),
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: isDevelopment,
-            },
-          },
-        ],
-      },
-      {
         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         type: 'asset',
         parser: {
